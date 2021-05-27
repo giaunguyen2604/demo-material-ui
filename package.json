@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn lint & next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint './**/*.js?(x)'"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
     "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-plugin-react": "^7.23.2"
   }
 }
